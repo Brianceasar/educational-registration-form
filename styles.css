@@ -10,7 +10,7 @@ html, body {
     color: #eee;
     }
     body {
-    background: url("/welcome-bg.jpg") no-repeat center;
+    background: url("/book-bg.jpg") no-repeat center;
     background-size: cover;
     }
     h1, h2 {
@@ -29,11 +29,17 @@ html, body {
     padding: 25px;
     background: rgba(0, 0, 0, 0.5); 
     }
+    .fas{
+        color: #f35201;
+    }
     .left-part, form {
     padding: 25px;
     }
     .left-part {
     text-align: center;
+    }
+    .animate__animated.animate__backInRight{
+        --animate-duration:5s;
     }
     .fa-graduation-cap {
     font-size: 72px;
@@ -43,18 +49,23 @@ html, body {
     border-radius: 20px;
     /* border: solid #871616 3px; */
     }
+    .animate__animated.animate__bounceInDown{
+        --animate-duration:10s;
+    }
     .title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     }
-    .title .intro-heading{
-        animation: rollin;
-        animation-duration: 2s;
+    .animate__animated.animate__slideInDown{
+        --animate-duration:5s;
     }
     .info {
     display: flex;
     flex-direction: column;
+    }
+    .animate__animated.animate__bounceInUp{
+        --animate-duration:10s;
     }
     input, select {
     padding: 5px;
@@ -104,6 +115,7 @@ html, body {
     button:hover, .btn-item:hover {
     background: #e77635;
     }
+
     @media (min-width: 568px) {
     html, body {
     height: 100%;
@@ -117,3 +129,35 @@ html, body {
     height: auto;
     }
     }
+
+    .landing-hero {
+        background-image: url('/welcome-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        text-align: center;
+        color: white;
+        padding: 100px 0;
+      }
+      .landing-hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .landing-hero p {
+        font-size: 34px;
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        font-weight: 600;
+      }
+    header{
+        background-color: #e46f1a;
+        padding: 10px;
+        text-align: center;
+      }
+
+.logo{
+    font-weight: 600;
+}
+  
