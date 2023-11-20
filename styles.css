@@ -10,7 +10,7 @@ html, body {
     color: #eee;
     }
     body {
-    background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+    background: url("/welcome-bg.jpg") no-repeat center;
     background-size: cover;
     }
     h1, h2 {
@@ -40,11 +40,17 @@ html, body {
     }
     form {
     background: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    /* border: solid #871616 3px; */
     }
     .title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    }
+    .title .intro-heading{
+        animation: rollin;
+        animation-duration: 2s;
     }
     .info {
     display: flex;
@@ -72,7 +78,7 @@ html, body {
     vertical-align: middle;
     }
     .checkbox a {
-    color: #26a9e0;
+    color: #f35201;
     }
     .checkbox a:hover {
     color: #85d6de;
@@ -82,10 +88,10 @@ html, body {
     margin-top: 20px;
     border-radius: 5px; 
     border: none;
-    background: #26a9e0; 
+    background: #f35201; 
     text-decoration: none;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
     }
     .btn-item {
@@ -96,7 +102,7 @@ html, body {
     width: 100%;
     }
     button:hover, .btn-item:hover {
-    background: #85d6de;
+    background: #e77635;
     }
     @media (min-width: 568px) {
     html, body {
